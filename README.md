@@ -6,3 +6,4 @@ html-literal
 parcel
 navigo (version 8)
 lodash
+# Capstone
