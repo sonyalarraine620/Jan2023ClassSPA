@@ -1,5 +1,5 @@
-
-export { default as Bio } from "./Bio";
-export { default as Home} from "./Home";
-export { default as Order } from "./Order";
-export { default as Pizza} from "./Pizza";
+//Build aggregators
+export { default as Daily } from "./Daily";
+export { default as Home } from "./Home";
+export { default as Calendar } from "./Calendar";
+export { default as Todo } from "./Todo";

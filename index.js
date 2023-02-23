@@ -29,7 +29,7 @@ function afterRender() {
 router
   .on({
     "/": () => render(),
-    ":view": (params) => {
+    ":view": params => {
       let view = capitalize(params.data.view);
       render(store[view]);
     },

@@ -1,7 +1,7 @@
 import html from "html-literal";
 
-export default () => html`
+export default () =>html`
 <footer>
-&copy; 2020 <a href="https://savvycoders.com/">Savvy Coders</a>
+    <h4>Here is my footer!</h4>
 </footer>
-`;
+`
