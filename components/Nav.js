@@ -15,3 +15,4 @@ export default links => html`
 </ul>
 </nav>
 `;
+//in the components folder will use the links file we create in the store folder
