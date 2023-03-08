@@ -81,7 +81,7 @@ export default () => html`
         type="hidden"
         name="customer"
         id="customer"
-        value="namehere"
+        value="SonyaV"
       />
       <input type="submit" name="submit" value="Submit Pizza" />
     </form>

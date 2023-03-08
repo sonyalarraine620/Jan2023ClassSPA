@@ -25,9 +25,7 @@ function afterRender(state) {
   document.querySelector(".fa-bars").addEventListener("click", () => {
     document.querySelector("nav > ul").classList.toggle("hidden--mobile");
   });
-  // document.querySelector(".expRate").addEventListener("click", event => {
-  //   console.log(event.target.attributes);
-  // });
+
   if (state.view === "Order") {
     document.querySelector("form").addEventListener("submit", event => {
       event.preventDefault();
@@ -66,22 +64,22 @@ function afterRender(state) {
     });
   }
 
-  if (state.view === "Pizza") {
-    document.querySelectorAll(".delete-action").forEach(element => {
-      element.addEventListener("click", event => {
-        const id = event.target.dataset.id;
-        const doit = confirm(`Are your sure you want to delete ${id}`);
-        if (doit) {
-          axios
-            .delete(`${process.env.PIZZA_PLACE_API_URL}/pizzas/${id}`)
-            .then(response => {
-              console.log("response", response);
-              router.navigate("/pizza");
-            });
-        }
-      });
-    });
-  }
+  // if (state.view === "Pizza") {
+  //   document.querySelectorAll(".delete-action").forEach(element => {
+  //     element.addEventListener("click", event => {
+  //       const id = event.target.dataset.id;
+  //       const doit = confirm(`Are your sure you want to delete ${id}`);
+  //       if (doit) {
+  //         axios
+  //           .delete(`${process.env.PIZZA_PLACE_API_URL}/pizzas/${id}`)
+  //           .then(response => {
+  //             console.log("response", response);
+  //             router.navigate("/pizza");
+  //           });
+  //       }
+  //     });
+  //   });
+  // }  NOT SURE IF THIS BELONGS^^^
 }
 
 router.hooks({
